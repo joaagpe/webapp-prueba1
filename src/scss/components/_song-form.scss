@@ -1,0 +1,14 @@
+.song-form {
+    
+    padding-bottom: 60px;
+    @include if-tablet-landscape {
+        .form-control-group {
+            box-sizing: border-box;
+            width: calc(50% - 4px);
+            display: inline-block;
+            
+         padding: 5px;
+        }
+    }
+    
+}

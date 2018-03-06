@@ -1,0 +1,54 @@
+body {
+    background: rgb(198, 161, 247);
+    font-family: $main-font-family;
+    font-size: $font-size-base;
+    color: $main-text-color;
+    padding-top: 60px;
+}
+
+form {
+    padding: 10px;
+}
+
+label, input, button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: $font-size-small;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid $form-input-border-color;
+    font-size: $font-size-base;
+    &:focus {
+        outline-color: $form-input-outline-color;
+    }
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid $form-input-border-color;
+    font-size: $font-size-base;
+
+    &:focus {
+        outline-color: $form-input-outline-color;
+    }
+
+    background-color: $color-sidonia-orange;
+    color:  $form-button-font-color;
+    font-weight: bold;
+    transition: all 0.25s;
+    &:active {
+        background: lighten($form-button-background-color,  25%);
+    }
+}
